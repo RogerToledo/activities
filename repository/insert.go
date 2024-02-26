@@ -1,8 +1,8 @@
 package repository
 
 import (
-	"github.com/me/activities/db"
-	"github.com/me/activities/models"
+	"github.com/me/todo-api/db"
+	"github.com/me/todo-api/models"
 )
 
 func Insert(todo models.Todo) (id uint, err error) {

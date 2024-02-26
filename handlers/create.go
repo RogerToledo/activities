@@ -6,8 +6,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/me/activities/models"
-	"github.com/me/activities/repository"
+	"github.com/me/todo-api/models"
+	"github.com/me/todo-api/repository"
 )
 
 func Create(w http.ResponseWriter, r *http.Request) {
@@ -23,12 +23,12 @@ func Create(w http.ResponseWriter, r *http.Request) {
 	id, err := repository.Insert(todo)
 	if err != nil {
 		rsp = map[string]any{
-			"Error": true,
+			"Error":   true,
 			"Message": fmt.Sprintf("Error trying to create: %v", err),
 		}
 	} else {
 		rsp = map[string]any{
-			"Error": false,
+			"Error":   false,
 			"Message": fmt.Sprintf("Created with success! ID: %d", id),
 		}
 	}

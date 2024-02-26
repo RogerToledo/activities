@@ -7,8 +7,8 @@ import (
 	"strconv"
 
 	"github.com/go-chi/chi/v5"
-	"github.com/me/activities/models"
-	"github.com/me/activities/repository"
+	"github.com/me/todo-api/models"
+	"github.com/me/todo-api/repository"
 )
 
 func Update(w http.ResponseWriter, r *http.Request) {

@@ -1,8 +1,8 @@
 package repository
 
 import (
-	"github.com/me/activities/db"
-	"github.com/me/activities/models"
+	"github.com/me/todo-api/db"
+	"github.com/me/todo-api/models"
 )
 
 func Update(id uint, todo models.Todo) (int64, error) {
@@ -18,9 +18,9 @@ func Update(id uint, todo models.Todo) (int64, error) {
 	if err != nil {
 		return 0, err
 	}
-	
+
 	rowsAffected, _ := rst.RowsAffected()
 
 	return rowsAffected, nil
-	
+
 }

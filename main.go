@@ -5,8 +5,8 @@ import (
 	"net/http"
 
 	"github.com/go-chi/chi/v5"
-	"github.com/me/activities/configs"
-	"github.com/me/activities/handlers"
+	"github.com/me/todo-api/configs"
+	"github.com/me/todo-api/handlers"
 )
 
 func main() {

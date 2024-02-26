@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/me/activities/repository"
+	"github.com/me/todo-api/repository"
 )
 
 func List(w http.ResponseWriter, r *http.Request) {

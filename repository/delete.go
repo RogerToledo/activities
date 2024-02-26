@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"github.com/me/activities/db"
+	"github.com/me/todo-api/db"
 )
 
 func Delete(id uint) (int64, error) {

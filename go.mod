@@ -1,4 +1,4 @@
-module github.com/me/activities
+module github.com/me/todo-api
 
 go 1.21.3
 

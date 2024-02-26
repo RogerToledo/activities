@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	_ "github.com/lib/pq"
-	"github.com/me/activities/configs"
+	"github.com/me/todo-api/configs"
 )
 
 func OpenConnection() (*sql.DB, error) {
