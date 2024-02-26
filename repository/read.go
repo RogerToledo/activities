@@ -12,7 +12,7 @@ func Read(id uint) (todo models.Todo, err error) {
 	}
 	defer conn.Close()
 
-	sql := `SELECT * FROM todo WHERE id = $1`
+	sql := `SELECT * FROM todos WHERE id = $1`
 
 	row := conn.QueryRow(sql, id)
 

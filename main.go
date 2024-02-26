@@ -19,9 +19,10 @@ func main() {
 	r.Post("/", handlers.Create)
 	r.Put("/{id}", handlers.Update)
 	r.Delete("/{id}", handlers.Delete)
-	r.Get("/", handlers.Read)
+	r.Get("/", handlers.List)
 	r.Get("/{id}", handlers.Read)
 
-	http.ListenAndServe(fmt.Sprintf(":%s", configs.GetServerPort()), r)
+	fmt.Printf("Listening on port: %s", configs.GetServerPort())
 
+	http.ListenAndServe(fmt.Sprintf(":%s", configs.GetServerPort()), r)
 }

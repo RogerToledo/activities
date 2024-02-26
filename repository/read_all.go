@@ -12,7 +12,7 @@ func ReadAll() (todos []models.Todo, err error) {
 	}
 	defer conn.Close()
 
-	sql := `SELECT * FROM todo`
+	sql := `SELECT * FROM todos`
 
 	rows, err := conn.Query(sql)
 	if err != nil {
